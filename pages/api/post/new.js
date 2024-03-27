@@ -13,6 +13,5 @@ export default async function handler(요청, 응답){
     let result = await db.collection('post').insertOne(요청.body)
     
     return 응답.status(200).redirect('/list')
-    
     }
 }
